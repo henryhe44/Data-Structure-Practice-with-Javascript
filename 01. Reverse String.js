@@ -5,8 +5,8 @@ Create a function to reverse a string input.
 
 Example
 -------
- Input: "A quick brown fox jumps over a lazy dog."
-Output: ".god yzal a revo spmuj xof nworb kciuq A"
+ Input: 'A quick brown fox jumps over a lazy dog.'
+Output: '.god yzal a revo spmuj xof nworb kciuq A'
 */
 
 /*
@@ -15,9 +15,9 @@ Solution#1
 This solution converts the string into a character array, because arrays have tonnes of helper functions.
 Apparently, reverse() is just what we need in this case. the join() function converts the character array back into a string.
 */
- function reverse(str){
+function reverse(str){
  	return str.split('').reverse().join('');
- }
+}
 
 /*
 Solution#2

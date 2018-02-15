@@ -18,29 +18,31 @@ add it into the first place of 'reversed'. Before that happens, 'reversed' needs
 which can be accomplished by multiplying it by 10. By the end of the while loop, 'reversed' should contain the reverse order
 of the integer input and will be returned.
 */
- function reverseInt(n){
+function reverseInt(n){
  	let reversed = 0;
  	while(n > 0){
  		reversed = (reversed * 10) + (n % 10);
  		n = Math.floor(n / 10);
  	}
  	return reversed;
- }
+}
 
 /*
 Solution#1 (FIXED)
 ------------------
 Don't forget that the integer may be negative...
 */
- function reverseInt(n){
+function reverseInt(n){
  	let sign = Math.sign(n);
  	let reversed = 0;
+
+ 	n *= sign; // this forces n to be positive.
  	while(n > 0){
  		reversed = (reversed * 10) + (n % 10);
  		n = Math.floor(n / 10);
  	}
  	return reversed * sign;
- }
+}
 
 /*
 Solution#2
@@ -48,8 +50,8 @@ Solution#2
 Why bother with my unintuitive attempt when you can convert your integer input into a string and reverse it?
 Apparently, there's also sign() function in the Math object of Javascript that keeps the sign of numbers.
 */
- function reverseInt(n){
- 	return reverse = parseInt(
+function reverseInt(n){
+ 	let reverse = parseInt(
  		n.toString()
  		.split('')
  		.reverse()
@@ -57,4 +59,4 @@ Apparently, there's also sign() function in the Math object of Javascript that k
  	)
  	reverse *= Math.sign(n);
  	return reverse;
- }
+}
