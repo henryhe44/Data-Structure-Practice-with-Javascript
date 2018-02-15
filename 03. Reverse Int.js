@@ -48,7 +48,7 @@ function reverseInt(n){
 Solution#2
 ----------
 Why bother with my unintuitive attempt when you can convert your integer input into a string and reverse it?
-Apparently, there's also sign() function in the Math object of Javascript that keeps the sign of numbers.
+Apparently, there's also sign() method in the Math object of Javascript that keeps the sign of numbers.
 */
 function reverseInt(n){
  	let reverse = parseInt(

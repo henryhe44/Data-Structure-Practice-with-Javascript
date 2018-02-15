@@ -1,6 +1,6 @@
 /*
 Problem#5: Fizzbuzz
---------------------
+-------------------
 Create a function to print all numbers from 1 to n. 
 If the number is a multiple of 3, print 'fizz'.
 If the number is a multiple of 5, print 'buzz'.
@@ -30,7 +30,7 @@ Output: 1
 /*
 THE ONLY SOLUTION
 -----------------
-The advice from the lecturer is not to go crazy and overcomplicate things. Keep it simple and straightforward (KISS Principle).
+The advice from the instructor is not to go crazy and overcomplicate things. Keep it simple and straightforward (KISS Principle).
 A for loop containing a bunch of conditions should do the trick.
 */
 

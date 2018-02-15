@@ -13,7 +13,7 @@ Output: '.god yzal a revo spmuj xof nworb kciuq A'
 Solution#1
 ----------
 This solution converts the string into a character array, because arrays have tonnes of helper functions.
-Apparently, reverse() is just what we need in this case. the join() function converts the character array back into a string.
+Apparently, reverse() is just what we need in this case. the join() method converts the character array back into a string.
 */
 function reverse(str){
  	return str.split('').reverse().join('');
