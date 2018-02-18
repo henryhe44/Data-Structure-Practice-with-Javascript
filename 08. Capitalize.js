@@ -1,6 +1,6 @@
 /*
 Problem#8: Capitalize
-------------------
+---------------------
 Create a function that will capitalize the first letter of each word.
 
 Example:
