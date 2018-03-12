@@ -23,8 +23,22 @@ class Node{
 		if(this.data < data && this.right){
 			this.right.contains(data);
 		} else if(this.data > data && this.left){
-			this.left.constains(data);
+			this.left.contains(data);
 		}
 		return null;
 	}
 }
+
+// Test code below:
+const BST = new Node(5);
+BST.insert(3);
+BST.insert(7);
+BST.insert(2);
+BST.insert(4);
+BST.insert(6);
+BST.insert(8);
+
+console.log(BST.contains(5));
+console.log(BST.contains(8));
+console.log(BST.contains(2));
+console.log(BST.contains(9));
