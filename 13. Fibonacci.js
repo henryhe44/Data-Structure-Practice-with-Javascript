@@ -17,19 +17,21 @@ Probably the first answer that anyone would ever give.
 
 Here's an illustration showcasing why we'll end up with O(2^n):
 					
-							fib(5)
-						   /     \
-						  /       \
-						 /         \
-						/           \
-					   /	         \
-				 fib(4)               fib(3)
+				     fib(5)
+				     /     \
+				    /       \
+				   /         \
+				  /           \
+			         /             \
+				/               \
+			       /	     	 \
+			     fib(4)               fib(3)
 			    /      \             /      \
 			   /        \           /        \
-		    fib(3)      fib(2)   fib(2)     fib(1)
-		    /    \
-		   /      \
-	    fib(2)   fib(1)
+		        fib(3)      fib(2)    fib(2)     fib(1)
+       		        /    \
+		       /      \
+	            fib(2)   fib(1)
 						
 With an n = 5, we need 9 recursive calls in total. Work is doubled
 as n is incremented...
